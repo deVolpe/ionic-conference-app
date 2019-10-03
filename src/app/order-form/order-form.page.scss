@@ -1,0 +1,61 @@
+.header-img {
+  max-width: 5em;
+}
+.text-bold {
+  font-weight: 700;
+}
+
+.text-bold.header-left {
+  font-size: 20px;
+}
+
+.bestseller-img {
+  max-width: 25em;
+}
+
+.text-header {
+  background-color: #dba49e;
+  color: #fff;
+  max-width: 30em;
+  line-height: 1.5;
+}
+
+.text-footer {
+  background-color: #6ac8b3;
+  min-width: 30em;
+}
+
+.form {
+  border: 2px solid #e4e4e4;
+  max-width: 30em;
+}
+
+ion-input {
+  --background: #f1f1f1;
+  --color: #272727;
+  --padding-bottom: 10px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  --padding-top: 10px;
+  --placeholder-color: #818181;
+}
+
+.form-input {
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+}
+
+@media (max-width: 991px) {
+  .header-img,
+  .header-right {
+    display: none;
+  }
+
+  .text-header {
+    max-width: 20em;
+  }
+
+  .text-footer {
+    min-width: 0;
+  }
+}
