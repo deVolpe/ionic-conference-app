@@ -20,11 +20,11 @@
           <p>
             BUY 1 GET 1 50% OFF<br>
             <span style="font-weight:400;">Was $39.90</span><br>
-            <span style="text-decoration:underline;">Now Only $29.92</span>
+            <span class="text-underline">Now Only $29.92</span>
           </p>
         </ion-col>
       </div>
-      <div class="header-img">
+      <div class=" header-img">
         <ion-col>
           <ion-img src="assets/img/order-form/usps.jpg"></ion-img>
         </ion-col>
@@ -33,7 +33,7 @@
         <ion-col>
           <p>
             Your 2 X 24/7 LIP TREATMENT Will Be<br>
-            <span style="text-decoration:underline;">Delivered</span> Within 7 Business Days
+            <span class="text-underline">Delivered</span> Within 7 Business Days
           </p>
         </ion-col>
       </div>
@@ -44,8 +44,17 @@
           <ion-img src="assets/img/order-form/BSLipTreatmentWand.png"></ion-img>
         </div>
         <ion-list lines="none">
-          <ion-item>
-            <p class="ion-text-center text-bold text-italic"></p>
+          <ion-item class="ion-text-center text-list">
+            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
+          </ion-item>
+          <ion-item class="ion-text-center" color>
+            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
+          </ion-item>
+          <ion-item class="ion-text-center">
+            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
+          </ion-item>
+          <ion-item class="ion-text-center ">
+            <p class="text-italic">Feels Cool On Contact, Thanks To Peppermint Oil</p>
           </ion-item>
         </ion-list>
       </ion-col>
@@ -144,9 +153,14 @@
                     </ion-input>
                   </ion-item>
 
-                  <div class="ion-padding">
+                  <div class="ion-margin">
                     <ion-button (click)="onAddPaymentInfo(orderForm)" type="submit" expand="full" color="dark">
-                      <p class="ion-">> Add Payment Information</p>
+                      <ion-label>
+                        <h3 class="ion-padding">> Add
+                          Payment
+                          Information</h3>
+                        <p>USA Offer Only</p>
+                      </ion-label>
                     </ion-button>
                   </div>
 
@@ -176,7 +190,7 @@
       <ion-col>
         <ion-list lines="none">
           <ion-list-header>
-            <ion-label>Common Q&A</ion-label>
+            <p class="ion-text-center text-underline">Common Q&A</p>
           </ion-list-header>
           <ion-item>
             <ion-icon name="help-circle" slot="start"></ion-icon>

@@ -1,8 +1,15 @@
 .header-img {
   max-width: 5em;
 }
+
+.text-underline {
+  text-decoration: underline;
+}
 .text-bold {
   font-weight: 700;
+}
+.text-italic {
+  font-style: italic;
 }
 
 .text-bold.header-left {
