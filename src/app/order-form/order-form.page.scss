@@ -18,7 +18,8 @@
 }
 
 .bestseller-img {
-  max-width: 25em;
+  max-width: 30em;
+  margin: 0 auto;
 }
 
 .text-header {
@@ -90,11 +91,7 @@ ion-input {
     min-width: 0;
   }
 
-  p.ion-text-wrap {
-    text-align: center;
-  }
-
-  . {
+  .describe {
     display: none;
   }
 }

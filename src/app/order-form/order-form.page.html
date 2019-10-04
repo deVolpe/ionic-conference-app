@@ -7,9 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-no-padding">
-  <ion-grid>
-    <ion-row class="ion-justify-content-around ion-align-items-center ion-no-padding">
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-justify-content-around ion-align-items-center">
       <div class="header-img">
         <ion-col>
           <ion-img src="assets/img/order-form/coupon-icon.png"></ion-img>
@@ -50,24 +50,26 @@
             <span style="font-weight:400;">Shipping Today</span>
           </p>
         </div>
-
-        <div class="ion-text-center describe-dark">
-          <p class="text-italic">Replenishes And Hydrates For Fuller Softer Lips</p>
-        </div>
-
-
-        <div class="ion-text-center describe-color">
-          <p class="text-italic">Feels Like A Silky Gloss</p>
-        </div>
+        <div class="describe">
+          <div class="ion-text-center describe-dark">
+            <p class="text-italic">Replenishes And Hydrates For Fuller Softer Lips</p>
+          </div>
 
 
-        <div class="ion-text-center describe-dark">
-          <p class="text-italic">Plump Your Lips Naturally And Safely</p>
-        </div>
+          <div class="ion-text-center describe-color">
+            <p class="text-italic">Feels Like A Silky Gloss</p>
+          </div>
 
 
-        <div class="ion-text-center describe-color">
-          <p class="text-italic">Feels Cool On Contact, Thanks To Peppermint Oil</p>
+          <div class="ion-text-center describe-dark">
+            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
+          </div>
+
+
+          <div class="ion-text-center describe-color">
+            <p class="text-italic">Feels Cool On Contact, Thanks To Peppermint Oil</p>
+          </div>
+
         </div>
 
 
@@ -88,7 +90,7 @@
                   <ion-row class="ion-justify-content-around">
                     <ion-col>
                       <ion-text color="danger">
-                        <p [hidden]="firstname.valid || isSubmitted === false" class="ion-padding-start">
+                        <p [hidden]="firstname.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
                           First Name is required
                         </p>
                       </ion-text>
@@ -100,7 +102,7 @@
                     </ion-col>
                     <ion-col>
                       <ion-text color="danger">
-                        <p [hidden]="lastname.valid || isSubmitted === false" class="ion-padding-start">
+                        <p [hidden]="lastname.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
                           Last Name is required
                         </p>
                       </ion-text>
@@ -111,7 +113,7 @@
                     </ion-col>
                   </ion-row>
                   <ion-text color="danger">
-                    <p [hidden]="email.valid || isSubmitted === false" class="ion-padding-start">
+                    <p [hidden]="email.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
                       Email is required
                     </p>
                   </ion-text>
@@ -120,7 +122,7 @@
                       placeholder="Email Address" class="form-input"></ion-input>
                   </ion-item>
                   <ion-text color="danger">
-                    <p [hidden]="phone.valid || isSubmitted === false" class="ion-padding-start">
+                    <p [hidden]="phone.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
                       Phone Number is required
                     </p>
                   </ion-text>
@@ -128,7 +130,6 @@
                     <ion-input [(ngModel)]="receiver.phone" name="phone" #phone="ngModel" required type="tel"
                       placeholder="Mobile Phone Number" class="form-input"></ion-input>
                   </ion-item>
-
                 </ion-list>
                 <ion-list lines="none">
                   <ion-list-header>
@@ -137,7 +138,7 @@
                     </ion-label>
                   </ion-list-header>
                   <ion-text color="danger">
-                    <p [hidden]="address.valid || isSubmitted === false" class="ion-padding-start">
+                    <p [hidden]="address.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
                       Address is required
                     </p>
                   </ion-text>
@@ -146,21 +147,41 @@
                       placeholder="Address Line 1" class="form-input">
                     </ion-input>
                   </ion-item>
+                  <ion-text color="danger">
+                    <p [hidden]="city.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
+                      City is required
+                    </p>
+                  </ion-text>
                   <ion-item>
                     <ion-input [(ngModel)]="shipping.city" name="city" #city="ngModel" required placeholder="City"
                       class="form-input">
                     </ion-input>
                   </ion-item>
+                  <ion-text color="danger">
+                    <p [hidden]="country.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
+                      Country is required
+                    </p>
+                  </ion-text>
                   <ion-item>
                     <ion-input [(ngModel)]="shipping.country" name="country" #country="ngModel" required
                       placeholder="Country" class="form-input">
                     </ion-input>
                   </ion-item>
+                  <ion-text color="danger">
+                    <p [hidden]="state.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
+                      State is required
+                    </p>
+                  </ion-text>
                   <ion-item>
                     <ion-input [(ngModel)]="shipping.state" name="state" #state="ngModel" required
                       placeholder="State/Province" class="form-input">
                     </ion-input>
                   </ion-item>
+                  <ion-text color="danger">
+                    <p [hidden]="postalcode.valid || isSubmitted === false" class="ion-padding-start ion-no-margin">
+                      Postal Code is required
+                    </p>
+                  </ion-text>
                   <ion-item>
                     <ion-input [(ngModel)]="shipping.postalCode" name="postalcode" #postalcode="ngModel" required
                       type="number" placeholder="Zip/Postal Code" class="form-input">
@@ -204,7 +225,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="ion-justify-content-center ion-align-items-start">
       <ion-col>
         <ion-list lines="none">
           <div class="ion-text-center">
@@ -298,3 +319,12 @@
   </ion-grid>
 
 </ion-content>
+
+<ion-footer>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6"></ion-col>
+      <ion-col size="6"></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
