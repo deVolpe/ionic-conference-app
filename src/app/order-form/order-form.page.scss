@@ -1,9 +1,10 @@
+$background_style: #dba49e;
+
 .header-img {
   max-width: 5em;
 }
 
 .text-underline {
-  font-weight: 600;
   text-decoration: underline;
 }
 .text-bold {
@@ -22,8 +23,8 @@
   margin: 0 auto;
 }
 
-.text-header {
-  background-color: #dba49e;
+.text-form-header {
+  background-color: $background_style;
   color: #fff;
   line-height: 1.5;
 }
@@ -32,9 +33,8 @@
   background-color: #6ac8b3;
 }
 
-.form {
+.form-border {
   border: 2px solid #e4e4e4;
-  max-width: 30em;
 }
 
 ion-input {
@@ -45,9 +45,18 @@ ion-input {
   --placeholder-color: #818181;
 }
 
+ion-input {
+  --background: #3880ff;
+  --color: #ffffff;
+  --padding-bottom: 10px;
+  --padding-end: 4px;
+  --padding-start: 4px;
+  --padding-top: 10px;
+}
+
 .payments {
   margin: 0 auto;
-  max-width: 10em;
+  max-width: 20em;
 }
 
 .form-input {
@@ -60,29 +69,14 @@ ion-input {
   line-height: 1.5;
 }
 
-.describe-color,
-.describe-dark {
-  color: #fff;
-  padding: 3px;
-  margin: 10px 0;
-}
-
-.describe-color {
-  background-color: #dba49e;
-}
-
-.describe-dark {
-  background-color: #272727;
+ion-item.describe-color {
+  --background: $background_style;
 }
 
 @media (max-width: 991px) {
   .header-img,
   .header-right {
     display: none;
-  }
-
-  .text-header {
-    max-width: 20em;
   }
 
   .text-footer {
