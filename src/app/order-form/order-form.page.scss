@@ -3,6 +3,7 @@
 }
 
 .text-underline {
+  font-weight: 600;
   text-decoration: underline;
 }
 .text-bold {
@@ -41,15 +42,38 @@ ion-input {
   --background: #f1f1f1;
   --color: #272727;
   --padding-bottom: 10px;
-  --padding-end: 10px;
-  --padding-start: 10px;
   --padding-top: 10px;
   --placeholder-color: #818181;
+}
+
+.payments {
+  margin: 0 auto;
+  max-width: 10em;
 }
 
 .form-input {
   border: 1px solid #dfdfdf;
   border-radius: 2px;
+}
+
+.bestseller-text {
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.describe-color,
+.describe-dark {
+  color: #fff;
+  padding: 3px;
+  margin: 10px 0;
+}
+
+.describe-color {
+  background-color: #dba49e;
+}
+
+.describe-dark {
+  background-color: #272727;
 }
 
 @media (max-width: 991px) {
@@ -64,5 +88,13 @@ ion-input {
 
   .text-footer {
     min-width: 0;
+  }
+
+  p.ion-text-wrap {
+    text-align: center;
+  }
+
+  . {
+    display: none;
   }
 }

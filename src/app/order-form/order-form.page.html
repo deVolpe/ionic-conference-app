@@ -24,7 +24,7 @@
           </p>
         </ion-col>
       </div>
-      <div class=" header-img">
+      <div class="header-img">
         <ion-col>
           <ion-img src="assets/img/order-form/usps.jpg"></ion-img>
         </ion-col>
@@ -43,20 +43,34 @@
         <div class="bestseller-img">
           <ion-img src="assets/img/order-form/BSLipTreatmentWand.png"></ion-img>
         </div>
-        <ion-list lines="none">
-          <ion-item class="ion-text-center text-list">
-            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
-          </ion-item>
-          <ion-item class="ion-text-center" color>
-            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
-          </ion-item>
-          <ion-item class="ion-text-center">
-            <p class="text-italic">Plump Your Lips Naturally And Safely</p>
-          </ion-item>
-          <ion-item class="ion-text-center ">
-            <p class="text-italic">Feels Cool On Contact, Thanks To Peppermint Oil</p>
-          </ion-item>
-        </ion-list>
+        <div class="ion-text-center">
+          <p class="text-bold bestseller-text">
+            Limited Time <br>
+            <span style="font-weight:400;">Also</span> FREE
+            <span style="font-weight:400;">Shipping Today</span>
+          </p>
+        </div>
+
+        <div class="ion-text-center describe-dark">
+          <p class="text-italic">Replenishes And Hydrates For Fuller Softer Lips</p>
+        </div>
+
+
+        <div class="ion-text-center describe-color">
+          <p class="text-italic">Feels Like A Silky Gloss</p>
+        </div>
+
+
+        <div class="ion-text-center describe-dark">
+          <p class="text-italic">Plump Your Lips Naturally And Safely</p>
+        </div>
+
+
+        <div class="ion-text-center describe-color">
+          <p class="text-italic">Feels Cool On Contact, Thanks To Peppermint Oil</p>
+        </div>
+
+
       </ion-col>
       <ion-col>
         <ion-list lines="none">
@@ -152,18 +166,14 @@
                       type="number" placeholder="Zip/Postal Code" class="form-input">
                     </ion-input>
                   </ion-item>
-
-                  <div class="ion-margin">
+                  <div class="ion-padding-horizontal">
                     <ion-button (click)="onAddPaymentInfo(orderForm)" type="submit" expand="full" color="dark">
-                      <ion-label>
-                        <h3 class="ion-padding">> Add
-                          Payment
-                          Information</h3>
-                        <p>USA Offer Only</p>
-                      </ion-label>
+                      <p>> &nbsp;&nbsp;&nbsp;&nbsp;Add
+                        Payment
+                        Information<br>
+                        Usa Offer Only</p>
                     </ion-button>
                   </div>
-
                 </ion-list>
               </form>
             </ion-grid>
@@ -174,13 +184,21 @@
               <p>Shopping Is Safe & Secure - Guaranteed</p>
             </div>
           </ion-item>
-          <ion-item class="ion-padding">
+          <ion-item>
             <ion-thumbnail slot="start">
               <ion-img src="assets/img/order-form/secure-order-lock-02.png"></ion-img>
             </ion-thumbnail>
             <ion-label>
-              <p>Secure credit card payment<br> This is a secure 256-bit SSL encrypted payment.</p>
+              <p class="ion-text-wrap">Secure credit card payment<br> This is a secure 256-bit SSL
+                encrypted payment.
+              </p>
             </ion-label>
+          </ion-item>
+          <ion-item class="ion-justify-content-right ion-align-items-start">
+            <div class="ion-margin-horizontal payments">
+              <ion-img src="assets/img/order-form/cc.png">
+              </ion-img>
+            </div>
           </ion-item>
         </ion-list>
       </ion-col>
@@ -189,46 +207,49 @@
     <ion-row>
       <ion-col>
         <ion-list lines="none">
-          <ion-list-header>
-            <p class="ion-text-center text-underline">Common Q&A</p>
-          </ion-list-header>
+          <div class="ion-text-center">
+            <p class="text-underline">Common Q&A</p>
+          </div>
           <ion-item>
             <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
               <h3>Where is it made?</h3>
-              <p>The product is made in the USA</p>
+              <p class="ion-text-wrap">The product is made in the USA</p>
             </ion-label>
           </ion-item>
           <ion-item>
             <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
               <h3>Where is it made?</h3>
-              <p>The product is made in the USA</p>
+              <p class="ion-text-wrap">The product is made in the USA</p>
             </ion-label>
           </ion-item>
           <ion-item>
             <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
               <h3>Where is it made?</h3>
-              <p>The product is made in the USA</p>
+              <p class="ion-text-wrap">The product is made in the USA</p>
             </ion-label>
           </ion-item>
           <ion-item>
             <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
               <h3>Where is it made?</h3>
-              <p>The product is made in the USA</p>
+              <p class="ion-text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat
+                dolores molestias labore
+                doloremque doloribus, neque animi distinctio dolorem optio accusamus quam consectetur ipsam dolor
+                debitis, amet fuga, saepe nobis?</p>
             </ion-label>
           </ion-item>
         </ion-list>
       </ion-col>
       <ion-col>
         <ion-list lines="none">
-          <ion-list-header>
-            <div class="list-label">
-              <p>What Our Customers Say</p>
-            </div>
-          </ion-list-header>
+
+          <div class="ion-text-center">
+            <p class="text-underline">What Our Customers Say</p>
+          </div>
+
           <ion-item>
             <ion-label>
               <h3>Denis</h3>
