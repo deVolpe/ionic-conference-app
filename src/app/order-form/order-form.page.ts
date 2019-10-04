@@ -25,6 +25,18 @@ export class OrderFormPage implements OnInit {
     postalCode: null
   };
 
+  inputLabels = [
+    'First Name',
+    'Last Name',
+    'Email',
+    'Phone Number',
+    'Address',
+    'City',
+    'Country',
+    'State',
+    'Postal Code'
+  ];
+
   isSubmitted = false;
 
   constructor(private toastController: ToastController) {}
