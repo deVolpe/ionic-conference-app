@@ -25,7 +25,7 @@ export class OrderFormPage implements OnInit {
     postalCode: null
   };
 
-  inputLabels = [
+  inputLabels: string[] = [
     'First Name',
     'Last Name',
     'Email',

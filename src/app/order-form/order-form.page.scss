@@ -18,59 +18,61 @@ $background_style: #dba49e;
   font-size: 20px;
 }
 
+.text-bold.header-right {
+  line-height: 1.5;
+}
+
 .bestseller-img {
   max-width: 30em;
   margin: 0 auto;
 }
 
-.text-form-header {
-  background-color: $background_style;
-  color: #fff;
-  line-height: 1.5;
-}
+ion-item {
+  &.ion-no-padding {
+    --inner-padding-end: 0;
+  }
+  .text-form-header {
+    background-color: $background_style;
+    color: #fff;
+    line-height: 1.5;
+  }
+  .text-form-footer {
+    background-color: #6ac8b3;
+    // min-width: 35em;
+  }
+  &.describe-color {
+    --background: #dba49e;
+    --color: #fff;
+  }
+  ion-input {
+    --background: #f1f1f1;
+    --color: #272727;
+    --padding-bottom: 10px;
+    --padding-top: 10px;
+    --placeholder-color: #818181;
 
-.text-footer {
-  background-color: #6ac8b3;
+    &.form-input {
+      border: 1px solid #dfdfdf;
+      --border-radius: 8px;
+      --border-style: solid;
+      --border-width: 8px;
+      --padding-start: 10px;
+    }
+  }
 }
 
 .form-border {
   border: 2px solid #e4e4e4;
-}
-
-ion-input {
-  --background: #f1f1f1;
-  --color: #272727;
-  --padding-bottom: 10px;
-  --padding-top: 10px;
-  --placeholder-color: #818181;
-}
-
-ion-input {
-  --background: #3880ff;
-  --color: #ffffff;
-  --padding-bottom: 10px;
-  --padding-end: 4px;
-  --padding-start: 4px;
-  --padding-top: 10px;
+  border-radius: 2px;
 }
 
 .payments {
   margin: 0 auto;
-  max-width: 20em;
-}
-
-.form-input {
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
 }
 
 .bestseller-text {
   font-size: 25px;
   line-height: 1.5;
-}
-
-ion-item.describe-color {
-  --background: $background_style;
 }
 
 @media (max-width: 991px) {
@@ -79,10 +81,7 @@ ion-item.describe-color {
     display: none;
   }
 
-  .text-footer {
-    min-width: 0;
-  }
-
+  // ion-hide-lg-down doesn't work
   .describe {
     display: none;
   }
