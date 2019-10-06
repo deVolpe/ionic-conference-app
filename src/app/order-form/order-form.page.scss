@@ -3,7 +3,6 @@ $background_style: #dba49e;
 .header-img {
   max-width: 5em;
 }
-
 .text-underline {
   text-decoration: underline;
 }
@@ -13,12 +12,14 @@ $background_style: #dba49e;
 .text-italic {
   font-style: italic;
 }
-
-.text-bold.header-left {
+.text-normal {
+  font-weight: 400;
+}
+.header-left {
   font-size: 20px;
 }
 
-.text-bold.header-right {
+.header-right {
   line-height: 1.5;
 }
 
@@ -34,11 +35,12 @@ ion-item {
   .text-form-header {
     background-color: $background_style;
     color: #fff;
+    font-size: 18px;
     line-height: 1.5;
   }
   .text-form-footer {
     background-color: #6ac8b3;
-    // min-width: 35em;
+    min-width: 35em;
   }
   &.describe-color {
     --background: #dba49e;
@@ -53,21 +55,39 @@ ion-item {
 
     &.form-input {
       border: 1px solid #dfdfdf;
-      --border-radius: 8px;
       --border-style: solid;
       --border-width: 8px;
       --padding-start: 10px;
+      font-size: 15px;
     }
+  }
+
+  ion-text.privacy {
+    font-size: 8px;
   }
 }
 
-.form-border {
+.border {
   border: 2px solid #e4e4e4;
   border-radius: 2px;
 }
 
+.border-orange {
+  border-bottom-color: #e27b1f;
+  border-bottom-width: 3px;
+}
+
+.secure-lock {
+  max-width: 4em;
+}
+
+ion-button.btn-submit {
+  height: 4em;
+}
+
 .payments {
   margin: 0 auto;
+  max-width: 15em;
 }
 
 .bestseller-text {
@@ -80,7 +100,26 @@ ion-item {
   .header-right {
     display: none;
   }
+  ion-item {
+    .text-form-footer {
+      min-width: 0;
+    }
+    ion-input {
+      &.form-input {
+        font-size: 12px;
+      }
+    }
+  }
 
+  ion-col {
+    ion-text.ion-no-margin {
+      font-size: 10px;
+    }
+  }
+
+  .payments {
+    max-width: 13em;
+  }
   // ion-hide-lg-down doesn't work
   .describe {
     display: none;

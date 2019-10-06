@@ -9,49 +9,39 @@
 
 <ion-content>
   <ion-grid>
-    <ion-row class="ion-justify-content-around ion-align-items-center">
-      <div class="header-img">
-        <ion-col>
-          <ion-img src="assets/img/order-form/coupon-icon.png"></ion-img>
-        </ion-col>
-      </div>
-      <div class="ion-text-center text-bold header-left">
-        <ion-col>
-          <ion-text>
-            BUY 1 GET 1 50% OFF<br>
-            <span style="font-weight:400;">Was $39.90</span><br>
-            <span class="text-underline">Now Only $29.92</span>
-          </ion-text>
-        </ion-col>
-      </div>
-      <div class="header-img">
-        <ion-col>
-          <ion-img src="assets/img/order-form/usps.jpg"></ion-img>
-        </ion-col>
-      </div>
-      <div class="ion-text-center text-bold header-right">
-        <ion-col>
-          <ion-text>
-            Your 2 X 24/7 LIP TREATMENT Will Be<br>
-            <span class="text-underline">Delivered</span> Within 7 Business Days
-          </ion-text>
-        </ion-col>
-      </div>
+    <ion-row class="ion-align-items-center">
+      <ion-col class="header-img">
+        <ion-img src="assets/img/order-form/coupon-icon.png"></ion-img>
+      </ion-col>
+
+      <ion-col class="ion-text-center header-left">
+        <ion-text class="text-bold">
+          BUY 1 GET 1 50% OFF<br>
+          <span class="text-normal">Was $39.90</span><br>
+          <span class="text-underline">Now Only $29.92</span>
+        </ion-text>
+      </ion-col>
+
+      <ion-col class="header-img">
+        <ion-img src="assets/img/order-form/usps.jpg"></ion-img>
+      </ion-col>
+      <ion-col class="ion-text-center header-right">
+        <ion-text class="text-bold">
+          Your 2 X 24/7 LIP TREATMENT Will Be<br>
+          <span class="text-underline">Delivered</span> Within 7 Business Days
+        </ion-text>
+      </ion-col>
     </ion-row>
-
     <ion-row>
-      <ion-col class="ion-text-center">
-
+      <ion-col class="ion-text-center" size-lg="6" size="12">
         <ion-img src="assets/img/order-form/BSLipTreatmentWand.png" class="bestseller-img"></ion-img>
-
-
-        <ion-text class="text-bold bestseller-text">
+        <ion-text class="ion-text-center text-bold bestseller-text">
           Limited Time <br>
-          <span style="font-weight:400;">Also</span> FREE
-          <span style="font-weight:400;">Shipping Today</span>
+          <span class="text-normal">Also</span> FREE
+          <span class="text-normal">Shipping Today</span>
         </ion-text>
 
-        <ion-list lines="none" class="describe">
+        <ion-list lines="none" class="describe ion-text-center">
           <ion-item class="ion-margin-vertical" color="dark">
             <ion-text class="text-italic">Replenishes And Hydrates For Fuller Softer Lips
             </ion-text>
@@ -63,40 +53,40 @@
             <ion-text class="text-italic">Plump Your Lips Naturally And Safely</ion-text>
           </ion-item>
           <ion-item class="ion-margin-vertical describe-color">
-            <ion-text class="text-italic">Feels Cool On Contact, Thanks To Peppermint Oil</ion-text>
+            <ion-text class="ion-justify-content-center text-italic">
+              <span> Cool On Contact, Thanks To Peppermint Oil</span>
+            </ion-text>
           </ion-item>
         </ion-list>
       </ion-col>
 
-      <ion-col>
+      <ion-col size-lg="6" size="12">
         <ion-grid>
           <ion-list lines="none">
-            <ion-row class="ion-no-padding">
+            <ion-row>
               <ion-col class="ion-no-padding">
                 <ion-item class="ion-no-padding">
                   <ion-text class="ion-text-center text-bold text-form-header ion-padding">
-                    <span style="font-weight:400;">Tell Us Where To Send</span> YOUR 2 X 24/7 LIP TREATMENT
+                    <span class="text-normal">Tell Us Where To Send</span> YOUR 2 X 24/7 LIP TREATMENT
                     NORMALLY $39.90ea
                   </ion-text>
                 </ion-item>
               </ion-col>
             </ion-row>
-            <ion-row class="ion-no-padding">
+            <ion-row>
               <ion-col class="ion-no-padding">
-                <ion-item class="form-border ion-no-padding">
+                <ion-item class="border ion-no-padding" color="light">
                   <ion-grid>
                     <ion-row>
                       <ion-col>
-
-                        <ion-text class="ion-text-center text-bold text-form-header ion-padding">
+                        <ion-text class="text-bold ion-padding">
+                          1 Shipping
                         </ion-text>
-
                       </ion-col>
                       <ion-col>
-
-                        <ion-text class="ion-text-center text-bold text-form-header ion-padding">
+                        <ion-text class="text-bold ion-padding">
+                          2. Address
                         </ion-text>
-
                       </ion-col>
                     </ion-row>
                   </ion-grid>
@@ -105,10 +95,10 @@
             </ion-row>
             <ion-row>
               <ion-col class="ion-no-padding">
-                <ion-item class="form-border">
+                <ion-item class="border ion-no-padding">
                   <ion-grid>
                     <form #orderForm="ngForm" novalidate>
-                      <ion-list lines="none">
+                      <ion-list lines="none" class="ion-no-margin">
                         <ion-row>
                           <ion-col class="ion-no-padding">
                             <ion-text color="danger" [hidden]="firstname.valid || isSubmitted === false"
@@ -150,7 +140,7 @@
                             placeholder="Mobile Phone Number" class="form-input"></ion-input>
                         </ion-item>
                       </ion-list>
-                      <ion-list lines="none">
+                      <ion-list lines="none" class="ion-no-margin">
                         <ion-list-header>
                           <ion-label>SHIPPING
                           </ion-label>
@@ -210,12 +200,19 @@
                           </ion-col>
                         </ion-row>
                         <ion-button (click)="onAddPaymentInfo(orderForm)" type="submit" expand="full" color="dark"
-                          class="ion-padding-horizontal">
-                          <ion-text class="ion-padding"> &nbsp;&nbsp;&nbsp;&nbsp;Add
-                            Payment
-                            Information<br>
-                            Usa Offer Only</ion-text>
+                          class="ion-padding-horizontal ion-text-wrap btn-submit">
+                          > &nbsp;&nbsp;&nbsp;&nbsp;Add
+                          Payment
+                          Information<br>
+                          <ion-text class="privacy">USA Offer Only</ion-text>
                         </ion-button>
+                        <ion-row>
+                          <ion-col class="ion-text-center">
+                            <ion-text class="ion-padding privacy">
+                              We Respect Your Privacy & Information
+                            </ion-text>
+                          </ion-col>
+                        </ion-row>
                       </ion-list>
                     </form>
                   </ion-grid>
@@ -223,7 +220,7 @@
               </ion-col>
             </ion-row>
 
-            <ion-row class="ion-no-padding">
+            <ion-row>
               <ion-col class="ion-no-padding">
                 <ion-item class="ion-no-padding">
                   <ion-text class="ion-text-center text-bold text-form-footer ion-padding">
@@ -232,17 +229,23 @@
                 </ion-item>
               </ion-col>
             </ion-row>
-            <ion-item class="ion-padding-horizontal">
-              <ion-thumbnail slot="start">
-                <ion-img src="assets/img/order-form/secure-order-lock-02.png"></ion-img>
-              </ion-thumbnail>
-              <ion-text class="ion-text-wrap">Secure credit card payment<br> This is a secure 256-bit
-                SSL
-                encrypted payment.
-                <!-- <ion-img src="assets/img/order-form/cc.png" class="payments">
-                </ion-img> -->
-              </ion-text>
-            </ion-item>
+            <ion-row class="ion-padding-horizontal">
+              <ion-col size="12" size-lg="2" class="ion-justify-content-center">
+                <ion-img src="assets/img/order-form/secure-order-lock-02.png" class="secure-lock"></ion-img>
+              </ion-col>
+              <ion-col size="12" size-lg="10" class="ion-text-md-center ion-text-lg-start">
+                <ion-text class="ion-text-wrap">Secure credit card payment<br>
+                  This is a secure 256-bit SSL encrypted payment.
+                </ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-img src="assets/img/order-form/cc.png" class="payments">
+                </ion-img>
+              </ion-col>
+            </ion-row>
+
           </ion-list>
         </ion-grid>
       </ion-col>
