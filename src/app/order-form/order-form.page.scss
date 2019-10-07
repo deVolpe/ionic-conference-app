@@ -62,8 +62,13 @@ ion-item {
     }
   }
 
-  ion-text.privacy {
-    font-size: 8px;
+  ion-text {
+    &.privacy {
+      font-size: 8px;
+    }
+    &.text-italic {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -90,6 +95,8 @@ ion-button.btn-submit {
 }
 
 .payments {
+  position: relative;
+  top: -10px;
   margin: 0 auto;
   max-width: 15em;
 }
