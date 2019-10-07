@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-buttons>
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Order Form</ion-title>
@@ -75,9 +75,9 @@
             </ion-row>
             <ion-row>
               <ion-col class="ion-no-padding">
-                <ion-item class="border ion-no-padding" color="light">
+                <ion-item class="ion-no-padding border border-orange" color="light">
                   <ion-grid>
-                    <ion-row>
+                    <ion-row class="ion-padding">
                       <ion-col>
                         <ion-text class="text-bold ion-padding">
                           1 Shipping
@@ -200,11 +200,11 @@
                           </ion-col>
                         </ion-row>
                         <ion-button (click)="onAddPaymentInfo(orderForm)" type="submit" expand="full" color="dark"
-                          class="ion-padding-horizontal ion-text-wrap btn-submit">
-                          > &nbsp;&nbsp;&nbsp;&nbsp;Add
-                          Payment
-                          Information<br>
-                          <ion-text class="privacy">USA Offer Only</ion-text>
+                          class="ion-padding-horizontal btn-submit">
+                          <ion-text>
+                            > &nbsp;&nbsp;&nbsp;&nbsp;Add Payment Information<br>
+                            <ion-text class="privacy">USA Offer Only</ion-text>
+                          </ion-text>
                         </ion-button>
                         <ion-row>
                           <ion-col class="ion-text-center">
@@ -230,11 +230,11 @@
               </ion-col>
             </ion-row>
             <ion-row class="ion-padding-horizontal">
-              <ion-col size="12" size-lg="2" class="ion-justify-content-center">
+              <ion-col size="12" size-lg="2" class="lock ion-justify-content-center">
                 <ion-img src="assets/img/order-form/secure-order-lock-02.png" class="secure-lock"></ion-img>
               </ion-col>
-              <ion-col size="12" size-lg="10" class="ion-text-md-center ion-text-lg-start">
-                <ion-text class="ion-text-wrap">Secure credit card payment<br>
+              <ion-col size="12" size-lg="10" class="ion-text-center ion-text-lg-start">
+                <ion-text>Secure credit card payment<br>
                   This is a secure 256-bit SSL encrypted payment.
                 </ion-text>
               </ion-col>
@@ -257,37 +257,44 @@
       <ion-col size-lg="6" size="12">
         <ion-list lines="none">
           <div class="ion-text-center">
-            <p class="text-underline text-bold">Common Q&A</p>
+            <ion-text class="text-underline text-bold">Common Q&A</ion-text>
           </div>
           <ion-item>
-            <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
-              <h3>Where is it made?</h3>
+              <ion-icon name="help-circle" slot="start"></ion-icon>
+              <ion-text>
+                Where is it made?
+              </ion-text>
               <p class="ion-text-wrap">The product is made in the USA</p>
             </ion-label>
           </ion-item>
           <ion-item>
-            <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
-              <h3>Where is it made?</h3>
+              <ion-icon name="help-circle" slot="start"></ion-icon>
+              <ion-text>
+                Where is it made?
+              </ion-text>
               <p class="ion-text-wrap">The product is made in the USA</p>
             </ion-label>
           </ion-item>
           <ion-item>
-            <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
-              <h3>Where is it made?</h3>
+              <ion-icon name="help-circle" slot="start"></ion-icon>
+              <ion-text>
+                Where is it made?
+              </ion-text>
               <p class="ion-text-wrap">The product is made in the USA</p>
             </ion-label>
           </ion-item>
           <ion-item>
-            <ion-icon name="help-circle" slot="start"></ion-icon>
             <ion-label>
-              <h3>Where is it made?</h3>
-              <p class="ion-text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat
-                dolores molestias labore
-                doloremque doloribus, neque animi distinctio dolorem optio accusamus quam consectetur ipsam dolor
-                debitis, amet fuga, saepe nobis?</p>
+              <ion-icon name="help-circle" slot="start"></ion-icon>
+              <ion-text>
+                Where is it made?
+              </ion-text>
+              <p class="ion-text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis magni
+                dolores, ad qui omnis quaerat iure. Necessitatibus adipisci vero, dolorem totam excepturi, nobis dicta
+                nam, illo dolore mollitia tempore.</p>
             </ion-label>
           </ion-item>
         </ion-list>
@@ -295,14 +302,15 @@
       <ion-col size-lg="6" size="12">
         <ion-list lines="none">
           <div class="ion-text-center">
-            <p class="text-underline text-bold">What Our Customers Say</p>
+            <ion-text class="text-underline text-bold">What Our Customers Say</ion-text>
           </div>
 
           <ion-item>
             <ion-label>
               <h3>Denis</h3>
               <ion-icon name="star-outline"></ion-icon>
-              <p class="ion-text-wrap">I purchased the 24/7 lip treatment. I'm in love!! At first, I didn't think it was
+              <p class="ion-text-wrap">I purchased the 24/7 lip treatment. I'm in love!! At first, I didn't think
+                it was
                 doing anything but a
                 few days later I
                 noticed my lips seemed fuller. I use it in the morning and at night and once throughout the day. It
@@ -316,7 +324,8 @@
             <ion-label>
               <h3>Denis</h3>
               <ion-icon name="star-outline"></ion-icon>
-              <p class="ion-text-wrap">I purchased the 24/7 lip treatment. I'm in love!! At first, I didn't think it was
+              <p class="ion-text-wrap">I purchased the 24/7 lip treatment. I'm in love!! At first, I didn't think
+                it was
                 doing anything but a
                 few days later I
                 noticed my lips seemed fuller. I use it in the morning and at night and once throughout the day. It
@@ -330,7 +339,8 @@
             <ion-label>
               <h3>Denis</h3>
               <ion-icon name="star-outline"></ion-icon>
-              <p class="ion-text-wrap">I purchased the 24/7 lip treatment. I'm in love!! At first, I didn't think it was
+              <p class="ion-text-wrap">I purchased the 24/7 lip treatment. I'm in love!! At first, I didn't think
+                it was
                 doing anything but a
                 few days later I
                 noticed my lips seemed fuller. I use it in the morning and at night and once throughout the day. It

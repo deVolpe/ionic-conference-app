@@ -85,6 +85,10 @@ ion-button.btn-submit {
   height: 4em;
 }
 
+.lock {
+  display: flex;
+}
+
 .payments {
   margin: 0 auto;
   max-width: 15em;
@@ -101,6 +105,9 @@ ion-button.btn-submit {
     display: none;
   }
   ion-item {
+    .text-form-header {
+      font-size: 17px;
+    }
     .text-form-footer {
       min-width: 0;
     }
